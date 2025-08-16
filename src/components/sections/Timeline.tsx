@@ -2,9 +2,11 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const items = [
-  { year: "2024", title: "Lead Frontend @ X", desc: "Scaled design system & motion architecture." },
-  { year: "2023", title: "Freelance Creator", desc: "Built award-winning interactive sites." },
-  { year: "2022", title: "Senior Engineer", desc: "Shipped data viz products with cinematic UX." },
+  {
+    year: "Oct 2024",
+    title: "Freelance Developer",
+    desc: "Building scalable, beautiful, and user-focused digital experiences.",
+  },
 ];
 
 const Timeline = () => {
@@ -14,7 +16,9 @@ const Timeline = () => {
   return (
     <section id="experience" className="py-24">
       <div className="container">
-        <h2 className="font-display text-3xl md:text-4xl font-bold mb-8">Experience — Motion in Time</h2>
+        <h2 className="font-display text-3xl md:text-4xl font-bold mb-8">
+          Experience — Motion in Time
+        </h2>
         <div className="relative" ref={ref}>
           <div className="absolute left-4 sm:left-1/2 sm:-translate-x-1/2 top-0 bottom-0 w-px bg-border" />
           <motion.div

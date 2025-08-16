@@ -6,17 +6,46 @@ import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
 import { FeedbackPopover } from "../ui/FeedbackPopover";
 
 const testimonials = [
-  { name: "Alice W.", text: "Working together was an absolute pleasure! 🌟" },
   {
-    name: "Mark R.",
-    text: "Super professional and creative. Highly recommend!",
+    name: "Ananya Sharma",
+    text: "Absolutely loved the website design — clean, modern, and exactly what I wanted! 🎨✨",
   },
   {
-    name: "Sofia K.",
-    text: "Brought my vision to life better than I imagined 💡",
+    name: "Rohan Mehta",
+    text: "Very reliable and delivered the project before the deadline. Great experience! ✅🚀",
   },
-  { name: "James P.", text: "Great communication and beautiful design work!" },
-  { name: "Nina T.", text: "Fast, friendly, and fantastic results! 🚀" },
+  {
+    name: "Ishita Verma",
+    text: "Turned my vague ideas into something amazing. Highly skilled developer! 💡💻",
+  },
+  {
+    name: "Siddharth Nair",
+    text: "The attention to detail was outstanding. Every small feature was perfect! 🔍👌",
+  },
+  {
+    name: "Priya Kapoor",
+    text: "From start to finish, the process was smooth and stress-free. 🌟😊",
+  },
+  {
+    name: "Aditya Malhotra",
+    text: "Loved the animations and overall feel of the site. Really stands out! 🎬🔥",
+  },
+  {
+    name: "Meera Iyer",
+    text: "Understood my requirements instantly and delivered exactly what I needed. 📝✅",
+  },
+  {
+    name: "Kunal Choudhary",
+    text: "Super easy to work with and full of creative ideas. 💭✨",
+  },
+  {
+    name: "Neha Bansal",
+    text: "The UI/UX was spot on. My customers have already given great feedback! 🎯💖",
+  },
+  {
+    name: "Arjun Singh",
+    text: "Quick responses, clear communication, and excellent technical skills! 📞⚡",
+  },
 ];
 
 const Contact = () => {
@@ -58,29 +87,29 @@ const Contact = () => {
             {/* Email */}
             <div className="flex items-center gap-4">
               <Mail className="w-5 h-5 text-blue-400" />
-              <a href="mailto:you@example.com" className="hover:underline">
-                you@example.com
+              <a href="mailto:dazushant@gmail.com" className="hover:underline">
+                dazushant@gmail.com
               </a>
             </div>
 
             {/* Phone */}
             <div className="flex items-center gap-4">
               <Phone className="w-5 h-5 text-blue-400" />
-              <a href="tel:+1234567890" className="hover:underline">
-                +1 (234) 567-890
+              <a href="tel:+919117440703" className="hover:underline">
+                +91 9117440703
               </a>
             </div>
 
             {/* Location */}
             <div className="flex items-center gap-4">
               <MapPin className="w-5 h-5 text-blue-400" />
-              <span>New York, USA</span>
+              <span>Greater Noida, UP</span>
             </div>
 
             {/* Social Links */}
             <div className="flex items-center gap-4 mt-6">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/dazzle0p"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-accent transition"
@@ -88,7 +117,7 @@ const Contact = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://linkedin.com/in/sushantjha1205"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full hover:bg-accent transition"

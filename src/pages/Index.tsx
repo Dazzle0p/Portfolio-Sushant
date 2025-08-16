@@ -34,7 +34,7 @@ const Index = () => {
           <nav className="sticky top-0 z-50 backdrop-blur bg-background/60 border-b border-border">
             <div className="container h-14 flex items-center justify-between">
               <a href="#top" className="font-display text-lg">
-                Creator Portfolio
+                Sushant Jha
               </a>
               <div className="hidden md:flex items-center gap-6 text-sm">
                 <a href="#about" className="story-link">
@@ -63,9 +63,9 @@ const Index = () => {
             <Timeline />
             <Contact />
           </main>
-          <footer className="py-10 text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Creator Portfolio — Built with motion +
-            craft.
+          <footer className="py-10 flex justify-center text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Sushant Jha — Built with Love and Lots
+            of Coffee
           </footer>
         </motion.div>
       )}

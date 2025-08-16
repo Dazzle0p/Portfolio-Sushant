@@ -19,15 +19,23 @@ import {
   Zap,
   Cpu,
   Sparkles,
+  Shield,
+  Network,
+  Rocket,
+  BarChart,
+  Gamepad2,
 } from "lucide-react";
 
 const skillBadge = [
   { icon: Code, label: "Frontend" },
   { icon: Layers, label: "Backend" },
   { icon: Database, label: "Database" },
-  { icon: Cpu, label: "Systems" },
-  { icon: Palette, label: "Design" },
-  { icon: Sparkles, label: "UX" },
+  { icon: Shield, label: "Security" },
+  { icon: Cpu, label: "System Design" },
+  { icon: Network, label: "APIs" },
+  // { icon: Rocket, label: "Scalability" },
+  // { icon: BarChart, label: "Analytics" },
+  // { icon: Gamepad2, label: "Gaming" },
 ];
 
 const bars = [
@@ -162,12 +170,9 @@ const Skills = () => {
         <div className="grid gap-12 items-center mb-10">
           <div>
             <h2 className="font-display text-3xl md:text-4xl font-bold mb-6">
-              Skills — Designed to Perform
+              Skills — My Digital Superpowers
             </h2>
-            <p className="text-muted-foreground mb-8">
-              Interactive visual craft meets robust engineering. Hover to feel
-              the depth.
-            </p>
+
             <div className="grid grid-cols-3 gap-4">
               {skillBadge.map((s, i) => (
                 <motion.div

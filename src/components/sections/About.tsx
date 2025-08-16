@@ -40,9 +40,9 @@ const ParallaxCard = ({ children, className = "" }) => {
 };
 
 const About = () => {
-  useEffect(() => {
-    document.title = "About | Creative Developer Portfolio";
-  }, []);
+  const scrollToSection = (id) => {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section id="about" className="relative overflow-hidden py-24">
@@ -52,6 +52,7 @@ const About = () => {
         className="pointer-events-none absolute inset-0"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.4 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5 }}
       >
         <div
@@ -200,13 +201,21 @@ const About = () => {
           viewport={{ once: true }}
         >
           <div className="flex items-center justify-center gap-4 flex-wrap">
-            <Button variant="hero" size="lg">
+            <Button
+              onClick={() => scrollToSection("contact")}
+              variant="hero"
+              size="lg"
+            >
               Start a Project
             </Button>
             <Button variant="glass" size="lg">
               Download Resume
             </Button>
-            <Button variant="glass" size="lg">
+            <Button
+              onClick={() => scrollToSection("projects")}
+              variant="glass"
+              size="lg"
+            >
               View Projects
             </Button>
           </div>

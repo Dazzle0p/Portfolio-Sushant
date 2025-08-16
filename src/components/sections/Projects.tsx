@@ -104,7 +104,7 @@ const Projects = () => {
       <div className="container">
         <div className="flex items-end justify-between mb-8">
           <h2 className="font-display text-3xl md:text-4xl font-bold">
-            Projects — Designed as Stories
+            Projects — From Idea to Impact
           </h2>
           <a href="#contact" className="story-link text-sm">
             Let’s collaborate

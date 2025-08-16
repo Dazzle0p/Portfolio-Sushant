@@ -137,7 +137,7 @@ const Loading = ({ onComplete }: LoadingProps) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
         >
-          Something amazing is in the works. Check back soon.
+          Something amazing is in the works....
         </motion.p>
 
         {/* Floating icons */}
@@ -182,7 +182,7 @@ const Loading = ({ onComplete }: LoadingProps) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
         >
-          © {new Date().getFullYear()} | Built with passion and code
+          © {new Date().getFullYear()} | Sushant Jha
         </motion.p>
       </div>
 
