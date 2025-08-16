@@ -63,7 +63,7 @@ const Index = () => {
             <Timeline />
             <Contact />
           </main>
-          <footer className="py-10 flex justify-center text-sm text-muted-foreground">
+          <footer className="py-10 flex justify-center text-center text-sm text-muted-foreground">
             © {new Date().getFullYear()} Sushant Jha — Built with Love and Lots
             of Coffee
           </footer>

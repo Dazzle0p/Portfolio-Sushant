@@ -137,7 +137,7 @@ const Loading = ({ onComplete }: LoadingProps) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1, duration: 0.5 }}
         >
-          Something amazing is in the works....
+          Something amazing is in the work....
         </motion.p>
 
         {/* Floating icons */}
