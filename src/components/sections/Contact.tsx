@@ -62,10 +62,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
+    <section id="contact" className="py-24 relative">
       <div className="container">
         {/* Heading */}
-        <div className="max-w-2xl mx-auto text-center mb-10">
+        <div className="max-w-2xl mx-auto text-center mb-10 px-4">
           <h2 className="font-display text-3xl md:text-4xl font-bold mb-3">
             Let’s Build Something Beautiful
           </h2>
@@ -75,14 +75,14 @@ const Contact = () => {
         </div>
 
         {/* Two-column layout */}
-        <div className="grid md:grid-cols-2 gap-10 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 max-w-7xl mx-auto px-4">
           {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-6 min-w-0"
           >
             {/* Email */}
             <div className="flex items-center gap-4">
@@ -134,8 +134,8 @@ const Contact = () => {
               </a>
             </div>
 
-            {/* Testimonials Carousel */}
-            <div className="mt-10 overflow-hidden">
+            {/* Testimonials Carousel (clip only this, not whole section) */}
+            <div className="mt-10 overflow-x-hidden">
               <motion.div
                 className="flex gap-6"
                 animate={{ x: ["0%", "-50%"] }}
@@ -159,39 +159,49 @@ const Contact = () => {
           </motion.div>
 
           {/* Contact Form */}
-          <form
-            onSubmit={onSubmit}
-            className="glass-base rounded-2xl p-6 space-y-4"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="min-w-0">
+            <form
+              onSubmit={onSubmit}
+              className="glass-base rounded-2xl p-4 sm:p-6 space-y-4 w-full max-w-full"
+            >
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input
+                  required
+                  placeholder="Name"
+                  className="w-full rounded-lg bg-background/40 border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring"
+                />
+                <input
+                  required
+                  type="email"
+                  placeholder="Email"
+                  className="w-full rounded-lg bg-background/40 border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring"
+                />
+              </div>
+
               <input
-                required
-                placeholder="Name"
+                placeholder="Subject"
                 className="w-full rounded-lg bg-background/40 border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring"
               />
-              <input
+
+              <textarea
                 required
-                type="email"
-                placeholder="Email"
-                className="w-full rounded-lg bg-background/40 border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring"
+                placeholder="Your message"
+                rows={5}
+                className="w-full rounded-lg bg-background/40 border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring resize-none"
               />
-            </div>
-            <input
-              placeholder="Subject"
-              className="w-full rounded-lg bg-background/40 border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring"
-            />
-            <textarea
-              required
-              placeholder="Your message"
-              rows={5}
-              className="w-full rounded-lg bg-background/40 border border-border px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring"
-            />
-            <div>
-              <Button variant="hero" size="lg" disabled={loading}>
-                {loading ? "Sending..." : "Send Message"}
-              </Button>
-            </div>
-          </form>
+
+              <div className="flex sm:justify-end">
+                <Button
+                  variant="hero"
+                  size="lg"
+                  disabled={loading}
+                  className="w-full sm:w-auto"
+                >
+                  {loading ? "Sending..." : "Send Message"}
+                </Button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
